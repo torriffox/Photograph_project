@@ -1,0 +1,141 @@
+:root {
+  --primary-font-family: "Roboto", sans-serif;
+  --secondry-font-family: "Montserrat", sans-serif;
+
+  --primary-color: #ffffff;
+  --secondary-color: #272142;
+  --background-color-navabar: #252525;
+  --background-color-images: #1b1b1b;
+  --background-color-footer: #282323;
+}
+
+h2,
+h1,
+p,
+.navbar-items a,
+footer {
+  font-family: var(--primary-font-family);
+}
+
+.navbar a:hover,
+.active-page {
+  color: var(--secondary-color) !important;
+}
+
+.caption a {
+  font-family: var(--secondry-font-family);
+}
+
+.hero {
+  background-image: url(images/background_photo.svg);
+  height: 900px;
+}
+
+.caption {
+  text-align: center;
+  color: var(--primary-color);
+  position: absolute;
+  top: 40%;
+  right: 35%;
+}
+
+.photography-name {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.title-main-page {
+  font-weight: bold;
+  font-size: 72px;
+}
+
+.describe-photograph-main-page {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  max-width: 460px;
+  margin: 0 auto 20px auto;
+}
+
+.link-get-started {
+  padding: 18px 30px;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+.navbar-items a {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.navbar {
+  background-color: var(--background-color-navabar);
+}
+
+.margin-right-img {
+  margin-right: 40px;
+}
+
+.margin-bottom-img {
+  margin-bottom: 40px;
+}
+
+.main-photos {
+  padding-top: 70px;
+  padding-bottom: 80px;
+  background-color: var(--background-color-images);
+}
+
+footer {
+  padding: 20px;
+  background-color: var(--background-color-footer);
+}
+
+.coded-by {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background_photo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .caption {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    right: 0%;
+  }
+
+  .title-main-page {
+    font-size: 40px;
+  }
+
+  .describe-photograph-main-page {
+    font-size: 10px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+  footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: var(--background-color-footer);
+    text-align: center;
+  }
+}
