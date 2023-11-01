@@ -7,13 +7,16 @@
   --background-color-navabar: #252525;
   --background-color-images: #1b1b1b;
   --background-color-footer: #282323;
+  --color-headings-about-page: #f65282;
 }
 
 h2,
+h3,
 h1,
 p,
 .navbar-items a,
-footer {
+footer,
+.camera {
   font-family: var(--primary-font-family);
 }
 
@@ -58,6 +61,7 @@ footer {
 }
 
 .link-get-started {
+  letter-spacing: 4px;
   padding: 18px 30px;
   border-radius: 50px;
   background-color: var(--primary-color);
@@ -100,14 +104,6 @@ footer {
 }
 
 @media (max-width: 1000px) {
-  body {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(images/background_photo.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   .caption {
     text-align: center;
     position: relative;
@@ -126,6 +122,16 @@ footer {
   footer {
     text-align: center;
   }
+
+  .about-main-content {
+    text-align: center;
+  }
+
+  .describe-photograph-about-page,
+  .camera {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1000px) and (max-width: 1500px) {
@@ -138,4 +144,48 @@ footer {
     background-color: var(--background-color-footer);
     text-align: center;
   }
+}
+
+/*About page*/
+
+.about-main-content {
+  margin-top: 72px;
+  background-color: var(--background-color-images);
+}
+
+.headings-about-page {
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--color-headings-about-page);
+}
+
+.title-about-page {
+  font-weight: bold;
+  font-size: 64px;
+  color: var(--primary-color);
+  letter-spacing: 5px;
+}
+
+.describe-photograph-about-page {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  max-width: 560px;
+  color: var(--primary-color);
+}
+
+.camera {
+  max-width: 430px;
+  border-radius: 4px;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 20px;
+  background-color: var(--background-color-footer);
+}
+
+.name-camera {
+  padding-left: 30px;
 }
